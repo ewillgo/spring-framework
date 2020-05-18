@@ -2,5 +2,4 @@ description = "Spring Source View"
 
 dependencies {
     compile(project(":spring-context"))
-    testCompile group: 'junit', name: 'junit', version: '4.12'
 }
