@@ -36,6 +36,8 @@ import org.springframework.util.Assert;
 /**
  * Convenient adapter for programmatic registration of bean classes.
  *
+ * 一个方便的bean注册器
+ *
  * <p>This is an alternative to {@link ClassPathBeanDefinitionScanner}, applying
  * the same resolution of annotations but for explicitly registered classes only.
  *

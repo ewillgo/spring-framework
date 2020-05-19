@@ -1,7 +1,7 @@
-package org.springframework.sourceview;
+package com.sourceview;
 
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan("org.springframework.sourceview")
+@ComponentScan("com.sourceview")
 public class AppConfig {
 }

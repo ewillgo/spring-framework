@@ -2,4 +2,5 @@ description = "Spring Source View"
 
 dependencies {
     compile(project(":spring-context"))
+    compile(project(":spring-beans"))
 }

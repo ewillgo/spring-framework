@@ -1,4 +1,4 @@
-package org.springframework.sourceview.service;
+package com.sourceview.service;
 
 import org.springframework.stereotype.Component;
 

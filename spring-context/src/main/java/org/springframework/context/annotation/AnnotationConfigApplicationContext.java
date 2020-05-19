@@ -32,13 +32,22 @@ import org.springframework.util.Assert;
  * {@link org.springframework.stereotype.Component @Component} types and JSR-330 compliant
  * classes using {@code javax.inject} annotations.
  *
+ * 独立的上下文环境加载器，接受组件类作为输入——尤其是@Configuration注解类，但是也接受@Component类
+ * 和兼容《JSR-330》规范的javax.inject注解类
+ *
  * <p>Allows for registering classes one by one using {@link #register(Class...)}
  * as well as for classpath scanning using {@link #scan(String...)}.
+ *
+ * 允许通过register方法一个一个类进行注册，
+ * 同样也可以通过scan方法扫描classpath路径进行组件类的加载
  *
  * <p>In case of multiple {@code @Configuration} classes, {@link Bean @Bean} methods
  * defined in later classes will override those defined in earlier classes. This can
  * be leveraged to deliberately override certain bean definitions via an extra
  * {@code @Configuration} class.
+ *
+ * 在多个@Configuration配置类加载的情况下，相同@Bean定义的类会覆盖早期加载的相同类
+ * 这样就可以利用其他的@Configuration配置类推翻早期加载的@Bean配置
  *
  * <p>See {@link Configuration @Configuration}'s javadoc for usage examples.
  *

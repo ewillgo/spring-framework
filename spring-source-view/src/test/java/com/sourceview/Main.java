@@ -1,7 +1,7 @@
-package org.springframework.sourceview;
+package com.sourceview;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.sourceview.service.OrderService;
+import com.sourceview.service.OrderService;
 
 public class Main {
 
